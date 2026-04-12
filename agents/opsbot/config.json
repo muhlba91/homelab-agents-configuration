@@ -2,7 +2,7 @@
   "version": 2,
   "agents": {
     "defaults": {
-      "workspace": "/etc/picoclaw/workspace",
+      "workspace": "/root/.picoclaw/workspace",
       "restrict_to_workspace": true,
       "model_name": "gpt-nano",
       "max_tokens": 32768,
