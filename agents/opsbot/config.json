@@ -85,7 +85,7 @@
         "enabled": true,
         "max_search_results": 15,
         "ttl": 10,
-        "use_bm25": true
+        "use_regex": true
       },
       "servers": {
         "kubernetes": {
