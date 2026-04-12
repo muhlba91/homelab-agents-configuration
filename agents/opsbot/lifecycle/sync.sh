@@ -11,4 +11,4 @@ printf "\n"
 
 # configuration
 echo "syncing configuration from ${SOURCE_PATH}/config.json to ${DATA_PATH}/config.json"
-cp "${SOURCE_PATH}/config.json" "${DATA_PATH}/config.json"
+envsubst < "${SOURCE_PATH}/config.json" > "${DATA_PATH}/config.json"

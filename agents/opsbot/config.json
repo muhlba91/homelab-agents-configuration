@@ -96,10 +96,8 @@
         "github": {
           "enabled": true,
           "type": "sse",
-          "url": "https://api.githubcopilot.com/mcp/",
+          "url": "http://agents-mcp-server-kubernetes:8082",
           "headers": {
-            "X-MCP-Toolsets": "context,actions,issues,labels,notifications,pull_requests,repos",
-            "Accept": "application/json, text/event-stream",
             "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
         },
