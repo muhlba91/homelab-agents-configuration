@@ -95,7 +95,7 @@
         },
         "github": {
           "enabled": true,
-          "type": "http",
+          "type": "sse",
           "url": "https://api.githubcopilot.com/mcp/",
           "headers": {
             "X-MCP-Toolsets": "context,actions,issues,labels,notifications,pull_requests,repos",
