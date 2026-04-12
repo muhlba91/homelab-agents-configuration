@@ -90,8 +90,8 @@
       "servers": {
         "kubernetes": {
           "enabled": true,
-          "type": "sse",
-          "url": "http://agents-mcp-server-kubernetes:8080/sse"
+          "type": "http",
+          "url": "http://agents-mcp-server-kubernetes:8080/mcp"
         },
         "github": {
           "enabled": true,
