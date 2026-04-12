@@ -82,7 +82,10 @@
     "mcp": {
       "enabled": true,
       "discovery": {
-        "enabled": false
+        "enabled": true,
+        "max_search_results": 10,
+        "ttl": 10,
+        "use_bm25": true
       },
       "servers": {
         "kubernetes": {
