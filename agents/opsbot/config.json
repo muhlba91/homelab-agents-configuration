@@ -82,7 +82,7 @@
     "mcp": {
       "enabled": true,
       "discovery": {
-        "enabled": true,
+        "enabled": false,
         "max_search_results": 15,
         "ttl": 10,
         "use_regex": true
