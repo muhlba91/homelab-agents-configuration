@@ -78,12 +78,12 @@
         "kubernetes": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-kubernetes:8080/sse"
+          "url": "http://agents-mcp-server-kubernetes:8080"
         },
         "github": {
           "enabled": true,
           "type": "http",
-          "url": "http://agents-mcp-server-github:8082",
+          "url": "http://agents-mcp-server-github:8082/mcp",
           "headers": {
             "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
@@ -91,12 +91,12 @@
         "metrics": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-victoria-metrics:8080/sse"
+          "url": "http://agents-mcp-server-victoria-metrics:8080"
         },
         "logs": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-victoria-logs:8080/sse"
+          "url": "http://agents-mcp-server-victoria-logs:8080"
         }
       }
     }
