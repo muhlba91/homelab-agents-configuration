@@ -14,20 +14,30 @@
   "model_list": [
     {
       "model_name": "gpt-nano",
-      "model": "openai/gpt-5.4-nano"
+      "model": "openai/gpt-5.4-nano",
+      "api_keys": [
+        "${OPENAI_API_KEY}"
+      ]
     },
     {
       "model_name": "gpt-mini",
-      "model": "openai/gpt-5.4-mini"
+      "model": "openai/gpt-5.4-mini",
+      "api_keys": [
+        "${OPENAI_API_KEY}"
+      ]
     },
     {
       "model_name": "claude-haiku",
-      "model": "anthropic/claude-haiku-4-5"
+      "model": "anthropic/claude-haiku-4-5",
+      "api_keys": [
+        "${ANTHROPIC_API_KEY}"
+      ]
     },
     {
       "model_name": "ollama",
       "model": "ollama/gemma4:e4b-it-q4_K_M",
-      "api_base": "http://ollama.ollama:11434/v1"
+      "api_base": "http://ollama.ollama:11434/v1",
+      "api_keys": []
     }
   ],
   "channels": {
