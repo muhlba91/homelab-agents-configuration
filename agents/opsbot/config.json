@@ -96,7 +96,7 @@
         "github": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-kubernetes:8082",
+          "url": "http://agents-mcp-server-github:8082",
           "headers": {
             "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
