@@ -16,8 +16,8 @@ cp "${SOURCE_PATH}/config.json" "${DATA_PATH}/config.json"
 # security
 SECURITY_SRC="/security/security.yml"
 if [[ -f "${SECURITY_SRC}" ]]; then
-  echo "syncing security from ${SECURITY_SRC} to ${DATA_PATH}/security.yml"
-  cp "${SECURITY_SRC}" "${DATA_PATH}/security.yml"
+  echo "syncing security from ${SECURITY_SRC} to ${DATA_PATH}/.security.yml"
+  cp "${SECURITY_SRC}" "${DATA_PATH}/.security.yml"
 else
   echo "skipping security sync: ${SECURITY_SRC} not found"
 fi
