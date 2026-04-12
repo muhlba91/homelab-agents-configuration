@@ -6,7 +6,7 @@
       "restrict_to_workspace": true,
       "model_name": "claude-haiku",
       "max_tokens": 32768,
-      "max_tool_iterations": 5,
+      "max_tool_iterations": 20,
       "summarize_token_percent": 50,
       "summarize_message_threshold": 10
     }
