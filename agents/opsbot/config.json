@@ -91,7 +91,7 @@
         "kubernetes": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-kubernetes:8080"
+          "url": "http://agents-mcp-server-kubernetes:8080/sse"
         },
         "github": {
           "enabled": true,
@@ -121,7 +121,7 @@
   "gateway": {
     "host": "0.0.0.0",
     "port": 18790,
-    "log_level": "debug",
+    "log_level": "info",
     "hot_reload": true
   }
 }
