@@ -96,8 +96,9 @@
         "github": {
           "enabled": true,
           "type": "http",
-          "url": "http://agents-mcp-server-github:8082/mcp",
+          "url": "https://api.githubcopilot.com/mcp",
           "headers": {
+            "X-MCP-Toolsets": "context,actions,issues,labels,notifications,pull_requests,repos",
             "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
         },
