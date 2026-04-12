@@ -104,7 +104,7 @@
         "metrics": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-victoria-metrics:8080"
+          "url": "http://agents-mcp-server-victoria-metrics:8080/sse"
         },
         "logs": {
           "enabled": true,
