@@ -82,10 +82,7 @@
     "mcp": {
       "enabled": true,
       "discovery": {
-        "enabled": false,
-        "max_search_results": 15,
-        "ttl": 10,
-        "use_regex": true
+        "enabled": false
       },
       "servers": {
         "kubernetes": {
@@ -96,8 +93,9 @@
         "github": {
           "enabled": true,
           "type": "sse",
-          "url": "http://agents-mcp-server-github:8082",
+          "url": "https://api.githubcopilot.com/mcp",
           "headers": {
+            "X-MCP-Toolsets": "context,actions,issues,labels,notifications,pull_requests,repos",
             "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
         },
