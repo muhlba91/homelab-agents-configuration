@@ -99,6 +99,7 @@
           "url": "https://api.githubcopilot.com/mcp",
           "headers": {
             "X-MCP-Toolsets": "context,actions,issues,labels,notifications,pull_requests,repos",
+            "Accept": "application/json, text/event-stream",
             "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
         },
