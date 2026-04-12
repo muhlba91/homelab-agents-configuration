@@ -13,10 +13,6 @@
   },
   "model_list": [
     {
-      "model_name": "gemini-flash",
-      "model": "gemini/gemini-3-flash-preview"
-    },
-    {
       "model_name": "gpt-nano",
       "model": "openai/gpt-5.4-nano"
     },
