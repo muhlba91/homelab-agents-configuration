@@ -89,7 +89,7 @@
           "type": "http",
           "url": "http://agents-mcp-server-github:8082",
           "headers": {
-            "Authorization": "Bearer $${GITHUB_MCP_TOKEN}"
+            "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
           }
         },
         "metrics": {
