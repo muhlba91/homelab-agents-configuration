@@ -103,12 +103,12 @@
         },
         "metrics": {
           "enabled": true,
-          "type": "sse",
+          "type": "http",
           "url": "http://agents-mcp-server-victoria-metrics:8080/mcp"
         },
         "logs": {
           "enabled": true,
-          "type": "sse",
+          "type": "http",
           "url": "http://agents-mcp-server-victoria-logs:8080/mcp"
         }
       }
