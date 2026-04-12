@@ -4,7 +4,7 @@
     "defaults": {
       "workspace": "/root/.picoclaw/workspace",
       "restrict_to_workspace": true,
-      "model_name": "",
+      "model_name": "claude-haiku",
       "max_tokens": 32768,
       "max_tool_iterations": 5,
       "summarize_token_percent": 50,
