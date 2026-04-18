@@ -47,7 +47,7 @@
         "700068305230364768"
       ],
       "group_trigger": {
-        "mention_only": true
+        "mention_only": false
       }
     }
   },
@@ -119,7 +119,7 @@
   "gateway": {
     "host": "0.0.0.0",
     "port": 18790,
-    "log_level": "warn",
+    "log_level": "info",
     "hot_reload": true
   }
 }
