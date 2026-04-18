@@ -4,11 +4,11 @@
     "defaults": {
       "workspace": "/root/.picoclaw/workspace",
       "restrict_to_workspace": true,
-      "model_name": "qwen",
+      "model_name": "gemini-flash-lite",
       "max_tokens": 8192,
       "max_tool_iterations": 10,
-      "summarize_token_percent": 30,
-      "summarize_message_threshold": 6
+      "summarize_token_percent": 40,
+      "summarize_message_threshold": 8
     }
   },
   "model_list": [
@@ -31,8 +31,8 @@
       ]
     },
     {
-      "model_name": "claude-haiku",
-      "model": "litellm/claude-haiku-4-5",
+      "model_name": "gemini-flash-lite",
+      "model": "litellm/gemini-3.1-flash-lite-preview",
       "enabled": true,
       "api_base": "http://litellm.litellm:4000/v1",
       "api_keys": [
@@ -47,7 +47,7 @@
         "700068305230364768"
       ],
       "group_trigger": {
-        "mention_only": false
+        "mention_only": true
       }
     }
   },
