@@ -4,11 +4,12 @@
     "defaults": {
       "workspace": "/root/.picoclaw/workspace",
       "restrict_to_workspace": true,
-      "model_name": "gemini-flash-lite",
-      "max_tokens": 8192,
-      "max_tool_iterations": 10,
-      "summarize_token_percent": 40,
-      "summarize_message_threshold": 8
+      "model_name": "qwen",
+      "max_tokens": 16384,
+      "max_tool_iterations": 15,
+      "summarize_token_percent": 50,
+      "summarize_message_threshold": 10,
+      "temperature": 1.0
     }
   },
   "model_list": [
@@ -16,6 +17,12 @@
       "model_name": "qwen",
       "model": "litellm/qwen3.5",
       "enabled": true,
+      "extra_body": {
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0.0,
+        "presence_penalty": 1.5
+      },
       "api_base": "http://litellm.litellm:4000/v1",
       "api_keys": [
         "${LITELLM_API_KEY}"
@@ -25,6 +32,11 @@
       "model_name": "gemma",
       "model": "litellm/gemma4",
       "enabled": true,
+      "extra_body": {
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0
+      },
       "api_base": "http://litellm.litellm:4000/v1",
       "api_keys": [
         "${LITELLM_API_KEY}"
