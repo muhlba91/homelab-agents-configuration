@@ -25,3 +25,4 @@
 local.env
 gcp-*-key.json
 tmp/
+config.json.tpl
