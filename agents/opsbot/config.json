@@ -20,8 +20,7 @@
       "extra_body": {
         "top_p": 0.95,
         "top_k": 20,
-        "min_p": 0.0,
-        "presence_penalty": 1.5
+        "min_p": 0.0
       },
       "api_base": "http://litellm.litellm:4000/v1",
       "api_keys": [
