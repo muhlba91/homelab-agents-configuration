@@ -93,29 +93,13 @@
         "use_bm25": true
       },
       "servers": {
-        "kubernetes": {
+        "litellm": {
           "enabled": true,
           "type": "http",
-          "url": "http://agents-mcp-server-kubernetes:8080/mcp"
-        },
-        "github": {
-          "enabled": true,
-          "type": "sse",
-          "url": "https://api.githubcopilot.com/mcp",
+          "url": "http://litellm.litellm:4000/mcp",
           "headers": {
-            "X-MCP-Toolsets": "context,actions,issues,labels,notifications,pull_requests,repos",
-            "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
+            "x-litellm-api-key": "Bearer ${LITELLM_API_KEY}"
           }
-        },
-        "metrics": {
-          "enabled": true,
-          "type": "http",
-          "url": "http://agents-mcp-server-victoria-metrics:8080/mcp"
-        },
-        "logs": {
-          "enabled": true,
-          "type": "http",
-          "url": "http://agents-mcp-server-victoria-logs:8080/mcp"
         }
       }
     }
