@@ -1,50 +1,42 @@
 {
-  "version": 2,
+  "version": 3,
   "agents": {
     "defaults": {
       "workspace": "/root/.picoclaw/workspace",
       "restrict_to_workspace": true,
-      "model_name": "qwen",
-      "max_tokens": 16384,
-      "max_tool_iterations": 15,
-      "summarize_token_percent": 50,
-      "summarize_message_threshold": 10,
-      "temperature": 1.0
+      "allow_read_outside_workspace": false,
+      "model_name": "glm",
+      "max_tokens": 32768,
+      "max_tool_iterations": 35,
+      "summarize_token_percent": 70,
+      "summarize_message_threshold": 30,
+      "temperature": 1.0,
+      "subturn": {
+        "max_depth": 2,
+        "max_concurrent": 2,
+        "default_timeout_minutes": 8,
+        "default_token_budget": 32000
+      }
     }
   },
   "model_list": [
     {
-      "model_name": "qwen",
-      "model": "litellm/qwen3.5",
-      "enabled": true,
-      "extra_body": {
-        "top_p": 0.95,
-        "top_k": 20,
-        "min_p": 0.0
-      },
-      "api_base": "http://litellm.litellm:4000/v1",
-      "api_keys": [
-        "${LITELLM_API_KEY}"
-      ]
-    },
-    {
-      "model_name": "gemma",
-      "model": "litellm/gemma4",
-      "enabled": true,
-      "extra_body": {
-        "top_p": 0.95,
-        "top_k": 64,
-        "min_p": 0.0
-      },
-      "api_base": "http://litellm.litellm:4000/v1",
-      "api_keys": [
-        "${LITELLM_API_KEY}"
-      ]
-    },
-    {
       "model_name": "gemini-flash-lite",
-      "model": "litellm/gemini-3.1-flash-lite-preview",
+      "model": "litellm/gemini-flash-lite-latest",
       "enabled": true,
+      "api_base": "http://litellm.litellm:4000/v1",
+      "api_keys": [
+        "${LITELLM_API_KEY}"
+      ]
+    },
+    {
+      "model_name": "glm",
+      "model": "litellm/glm-flash-latest",
+      "enabled": true,
+      "extra_body": {
+        "top_p": 0.95,
+        "reasoning_effort": "high"
+      },
       "api_base": "http://litellm.litellm:4000/v1",
       "api_keys": [
         "${LITELLM_API_KEY}"
@@ -63,6 +55,8 @@
     }
   },
   "tools": {
+    "filter_sensitive_data": true,
+    "filter_min_length": 8,
     "web": {
       "duckduckgo": {
         "enabled": true,
@@ -86,6 +80,9 @@
     "cron": {
       "enabled": true,
       "exec_timeout_minutes": 5
+    },
+    "read_file": {
+      "max_read_file_size": 524288
     },
     "mcp": {
       "enabled": true,
