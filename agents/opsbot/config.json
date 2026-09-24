@@ -43,13 +43,13 @@
       ]
     }
   ],
-  "channels": {
+  "channel_list": {
     "discord": {
       "enabled": true,
       "allow_from": [
         "700068305230364768"
       ],
-      "group_trigger": {
+      "settings": {
         "mention_only": false
       }
     }
