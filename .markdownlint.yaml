@@ -1,0 +1,5 @@
+---
+# One paragraph per line (DOC-06), so no hard line length limit.
+MD013: false
+# Agent persona files (AGENT.md, SOUL.md, USER.md) open with a plain line, not a heading.
+MD041: false

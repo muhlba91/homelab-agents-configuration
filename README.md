@@ -1,8 +1,8 @@
 # Homelab: Agents/Assistants - Configuration
 
-[![](https://img.shields.io/github/license/muhlba91/homelab-agents-configuration?style=for-the-badge)](LICENSE.md)
-[![](https://img.shields.io/github/actions/workflow/status/muhlba91/homelab-agents-configuration/verify.yml?style=for-the-badge)](https://github.com/muhlba91/homelab-agents-configuration/actions/workflows/verify.yml)
-[![](https://api.scorecard.dev/projects/github.com/muhlba91/homelab-agents-configuration/badge?style=for-the-badge)](https://scorecard.dev/viewer/?uri=github.com/muhlba91/homelab-agents-configuration)
+[![License](https://img.shields.io/github/license/muhlba91/homelab-agents-configuration?style=for-the-badge)](LICENSE.md)
+[![Verify status](https://img.shields.io/github/actions/workflow/status/muhlba91/homelab-agents-configuration/verify.yml?style=for-the-badge)](https://github.com/muhlba91/homelab-agents-configuration/actions/workflows/verify.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/muhlba91/homelab-agents-configuration/badge?style=for-the-badge)](https://scorecard.dev/viewer/?uri=github.com/muhlba91/homelab-agents-configuration)
 
 This repository contains configuration files and lifecycle scripts for personal agents and assistants.
 

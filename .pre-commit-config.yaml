@@ -1,4 +1,5 @@
----
+default_language_version:
+  node: system
 repos:
   - repo: https://github.com/siderolabs/conform
     rev: v0.1.0-alpha.33
@@ -10,15 +11,12 @@ repos:
     rev: v6.0.0
     hooks:
       - id: trailing-whitespace
+      - id: end-of-file-fixer
       - id: check-json
+      - id: check-yaml
       - id: check-merge-conflict
       - id: check-symlinks
-      - id: check-toml
-      - id: check-xml
-      - id: detect-aws-credentials
-        args: [ "--allow-missing-credentials" ]
       - id: detect-private-key
-      - id: end-of-file-fixer
   #      - id: no-commit-to-branch
   #        args: [
   #            "--branch",
@@ -34,3 +32,13 @@ repos:
     rev: 3.0.0
     hooks:
       - id: shellcheck
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.24.2
+    hooks:
+      - id: markdownlint-cli2
+        # vendored third-party skills, not owner-written
+        exclude: ^agents/opsbot/workspace/skills/
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.12
+    hooks:
+      - id: actionlint
